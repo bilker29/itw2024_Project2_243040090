@@ -232,37 +232,37 @@
     margin-top: 50px;
 }
 
-.banner .img{
+.banner .img {
     flex: 1 1 400px;
 }
 
-.banner .img img{
+.banner .img img {
     width: 100%;
 }
 
-.banner .content{
+.banner .content {
     flex: 1 1 400px;
     margin-left: 60px;
     margin-top: 60px;
 }
 
-.banner .content h3{
+.banner .content h3 {
     color: white;
     font-weight: bold;
 }
 
-.banner .content h2{
+.banner .content h2 {
     font-size: 50px;
     color: #D0E8C5;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
 }
 
-.banner .content p{
+.banner .content p {
     color: black;
 }
 
-#btnorder button{
+#btnorder button {
     width: 150px;
     height: 32px;
     letter-spacing: 5px;
@@ -273,14 +273,14 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:800px){
-    .banner .content h3{
+@media screen and (max-width: 800px) {
+    .banner .content h3 {
         font-size: 50px;
     }
 }
 
-@media screen and (max-width:855px){
-    .banner{
+@media screen and (max-width: 855px) {
+    .banner {
         height: 100vh;
     }
 }
@@ -303,6 +303,20 @@
     .banner .content h3 {
         font-size: 30px;
     }
+}
+
+/* Blinking animation */
+@keyframes blink {
+    0%, 100% {
+        color: #D0E8C5;
+    }
+    50% {
+        color: #ff0000; /* Change this to any color you prefer */
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
 }
 
 /* product cards */
