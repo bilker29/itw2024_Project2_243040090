@@ -1,13 +1,939 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Sayur</title>
+    <link rel="shortcut icon" type="image" href="/img/logo kecil.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo"><img src="/img/logo kecil.png" alt="" width="50px" id="typed3">Sayur MakDik</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="/img/dll/menu.png" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#sayur" class="dropdown-item">Sayur</a>
+                        <a href="#bumbu" class="dropdown-item">Bumbu Dapur</a>
+                        <a href="#racik" class="dropdown-item">Racik</a>
+                        <a href="#ayam" class="dropdown-item">Ayam & Ikan</a>
+                        <a href="#ikan" class="dropdown-item">Ikan asin</a>
+                        <a href="#seafood" class="dropdown-item">Seafood</a>
+                        <a href="#buah" class="dropdown-item">Buah</a>
+                    </div>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Galery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icons">
+                <img src="/img/dll/user.png" alt="" width="20px">
+                <img src="/img/dll/heart.png" alt="" width="20px">
+                <img src="/img/dll/add.png" alt="" width="24px">
+            </div>
+          </nav>
+      
+        <!-- home section -->
+        <div class="home">
+            <div class="content" data-aos="zoom-out-right" id="home">
+                <h3>
+                    <br>Sayur MakDik
+                </h3>
+                <h2>Category <span class="changecontent"></span></h2>
+                <p>Nikmati kelezatan dan manfaat kesehatan dari sayuran dan buah-buahan segar pilihan terbaik! Kami menyediakan beragam produk segar yang dipetik langsung dari petani lokal dengan kualitas yang terjamin.</p>
+                <a href="https://api.whatsapp.com/send/?phone=6289510631734&text&type=phone_number&app_absent=0" class="btn">Order Now</a>
+            </div>
+            <div class="img"  data-aos="zoom-out-left">
+                <img src="/img/logo besar 1.png" alt="">
+            </div>
+        </div>
+
+
+      <!-- banner -->
+        <div class="banner"    data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="content">
+                <h3>Dengan datang langsung</h3>
+                <h2>diskon 15%</h2>
+                <p>Jangan lewatkan kesempatan spesial ini! Yuk, datang langsung, Stok terbatas, jangan sampai kehabisan!</p>
+                <div id="btnorder" a href="https://api.whatsapp.com/send/?phone=6289510631734&text&type=phone_number&app_absent=0"></div>
+            </div>
+            <div class="img">
+                <img src="/img/logo besar 2.png" alt="">
+            </div>
+        </div>
+
+      <!-- product cards -->
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="sayur">Sayur</h1><br>
+            <div class="row" style="margin-top:50px;">
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="/img/sayur/1.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Sayur Bayam</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <h6>Rp. 4.500 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="/img/sayur/2.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Cabai Merah</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <h6>90.000<span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="/img/sayur/3.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Bawang Putih</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <h6>Rp. 46.000 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./img/sayur/4.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Timun</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <h6>Rp. 10.000 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="bumbu">Bumbu Dapur</h1><br>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/bumbu dapur/1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Kunyit</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 18.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/bumbu dapur/2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Jahe</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 50.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/bumbu dapur/3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>sereh</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 51.500 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/bumbu dapur/4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>daun Salam</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 21.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="racik">Racik</h1><br>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/racik/1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>masako</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 500 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/racik/2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Mecin</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 1.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/racik/3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Kecap Manis</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 1.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="./img/racik/4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Tepung Serbaguna</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 3.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="ayam">Ayam & Ikan </h1><br>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ayam & ikan/1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Ayam</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 36.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ayam & ikan/2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Ikan Marakel</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 33.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ayam & ikan/3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Udang</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 78.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ayam & ikan/4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Cumi</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 90.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="ikan">Ikan Asin</h1><br>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ikan asin/1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Ikan Asin Teri</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 42.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ikan asin/2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Ikan Asin teri Medan</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 32.500 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ikan asin/3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Ikan Asin Peda</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 58.500 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/ikan asin/4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Ikan Asin Jambal Roti</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 95.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="seafood">Seafood</h1><br>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/seafood/1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Sosis</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 35.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/seafood/2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Bakso</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 90.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/seafood/3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Nugget</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 50.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/seafood/4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Mie Kwetiuw</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 6.500 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 id="buah">Buah</h1><br>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/buah/1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Pepaya</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 18.500 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/buah/2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Melon</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 20.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/buah/3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Strawberry</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 55.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="/img/dll/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="/img/dll/heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="/img/dll/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="/img/buah/4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Anggur</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <h6>Rp. 80.000 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+<section id="gallery" data-aos="fade-up" data-aos-duration="1500">
+    <div class="container">
+        <h1>Gallery</h1><br>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" data-description="Sayur - Fresh vegetables available">
+                    <div class="overlay">
+                        <h3 class="text-center">Sayur</h3>
+                    </div>
+                    <img src="/img/kategori/sayur.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" data-description="Bumbu Dapur - Fresh kitchen spices available">
+                    <div class="overlay">
+                        <h3 class="text-center">Bumbu Dapur</h3>
+                    </div>
+                    <img src="/img/kategori/bumbu dapur.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" data-description="Racik - Fresh seasoning mixtures available">
+                    <div class="overlay">
+                        <h3 class="text-center">Racik</h3>
+                    </div>
+                    <img src="/img/kategori/racik.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" data-description="Ayam & Ikan - Fresh chicken and fish available">
+                    <div class="overlay">
+                        <h3 class="text-center">Ayam & Ikan</h3>
+                    </div>
+                    <img src="/img/kategori/ayam dan ikan.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" data-description="Ikan Asin - Fresh salted fish available">
+                    <div class="overlay">
+                        <h3 class="text-center">Ikan Asin</h3>
+                    </div>
+                    <img src="/img/kategori/ikan asin.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" data-description="Seafood - Fresh seafood available">
+                    <div class="overlay">
+                        <h3 class="text-center">Seafood</h3>
+                    </div>
+                    <img src="/img/kategori/seafood.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for displaying description -->
+<div id="descriptionModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<!-- Modal for displaying description -->
+<div id="descriptionModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+      <!-- about -->
+      <div class="container" id="about" id="about" data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>About</h1><br>
+        <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="/img/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                    <p>Sayur dan buah adalah sumber nutrisi penting yang kaya vitamin, mineral, serat, dan antioksidan. Konsumsi rutin keduanya memberikan berbagai manfaat, di antaranya:<br>
+                        
+                        1. Meningkatkan Imunitas: Kandungan vitamin C dan antioksidan membantu melindungi tubuh dari infeksi.<br>
+                        2. Menyehatkan Jantung: Serat dan kalium pada sayur dan buah, seperti pisang dan bayam, mendukung kesehatan jantung.<br>
+                        3. Mengontrol Berat Badan: Kalori rendah dan serat tinggi membuat kenyang lebih lama.<br>
+                        4. Melancarkan Pencernaan: Serat dalam apel dan brokoli membantu mencegah sembelit.<br>
+                        5. Mencegah Penyakit Kronis: Fitokimia melindungi tubuh dari kanker, diabetes, dan penyakit degeneratif.<br>
+                        6. Menjaga Kulit dan Mata: Vitamin A dan C mendukung kesehatan kulit dan mata.<br>
+                        <br>Dengan mengonsumsi sayur dan buah setiap hari, tubuh mendapatkan asupan gizi seimbang untuk kesehatan optimal.</p>                
+
+                <div id="bt"><button>Read More...</button></div>
+            </div>
+        </div>
+      </div>
+
+      <!-- contact  -->
+      <div class="container" id="contact">
+        <h1 class="text-center mb-4" data-aos="fade-down">Contact</h1><br>
+        <p class="text-center mb-5">Silahkan hubungi</p>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Message</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="8233eedc-b30b-42dd-ae1d-da1c2ccaf4b9">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Map -->
+            <div class="col-md-6 mt-4 mt-md-0" data-aos="flip-up">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Maps</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.0987639588516!2d107.07243007370039!3d-6.250715661199556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTUnMDIuNiJTIDEwN8KwMDQnMzAuMCJF!5e0!3m2!1sid!2sid!4v1736261310005!5m2!1sid!2sid" width="500" height="385" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">Sayur MakDik</h1>
+        <p class="text-center">Jangan lewatkan kesempatan spesial ini! Yuk, datang langsung, Stok terbatas, jangan sampai kehabisan!</p>
+        <div class="icons text-center">
+    <a href="https://github.com/bilker29" target="_blank">
+        <i class="bx bxl-github"></i>
+    </a>
+    <a href="https://discord.gg/QNfBYcB6" target="_blank">
+        <i class="bx bxl-discord"></i>
+    </a>
+    <a href="https://www.instagram.com/billy.w.2005?igsh=NmJsaGJpenZrYm05h" target="_blank">
+        <i class="bx bxl-instagram"></i>
+    </a>
+</div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>Sayur MakDik</strong> .All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Created by  <a href="#"><span>BilKer</span></a>
+        </div>
+      </footer>
+
+      <a href="#" class="arrow"><i><img src="/img/dll/up-arrow.png" alt="" width="50px"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
 </html>
