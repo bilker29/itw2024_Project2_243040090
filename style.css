@@ -320,7 +320,7 @@
 }
 
 /* product cards */
-#product-cards h1{
+.product-cards h1{
     text-align: center;
     font-weight: bold;
     margin-top: 50px;
@@ -329,7 +329,7 @@
     border-bottom: 2px solid #D0E8C5;
 }
 
-#product-cards .card{
+.product-cards .card{
     background-color: #D0E8C5;
     box-shadow: 0 0 3px black;
     border-radius: 5px;
@@ -345,7 +345,7 @@
     width: 70px;
 }
 
-#product-cards .card:hover .overlay{
+.product-cards .card:hover .overlay{
     opacity: 1;
     margin-left: 5%;
     transition: 0.5s ease;
@@ -368,7 +368,7 @@
     box-shadow: none;
 }
 
-#product-cards h3{
+.product-cards h3{
     color: white;
     text-shadow: 1px 1px 1px black;
 }
@@ -377,18 +377,18 @@
      color: yellow;
 }
 
-#product-cards p{
+.product-cards p{
     color: #2e1700;
     font-weight: bold;
 }
 
-#product-cards h6{
+.product-cards h6{
     font-size: 20px;
     color: #2e1700;
     font-weight: bold;
 }
 
-#product-cards h6 span button{
+.product-cards h6 span button{
     width: 100px;
     height: 26px;
     font-size: 15px;
@@ -402,13 +402,13 @@
     cursor: pointer;
 }
 
-#product-cards h6 span button:hover{
+.product-cards h6 span button:hover{
     background-color: #2e1700;
     color: white;
 }
 
 @media screen and (max-width: 800px) {
-    #product-cards .card {
+    .product-cards .card {
         margin: 10px auto;
     }
 }
@@ -466,6 +466,28 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     font-size: 24px;
+}
+
+.description-modal {
+    width: min(420px, 90vw);
+    padding: 1.5rem;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.description-modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.description-modal .modal-content {
+    border: 0;
+}
+
+.description-modal .close {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.75rem;
 }
 
 @media screen and (max-width: 800px) {
